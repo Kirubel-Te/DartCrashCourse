@@ -1,10 +1,50 @@
-void main(){
-  print("Hello World");
-  String name = "lugi";
-  name = "lugia";
-  print(name);
-  double pi = 3.14;
-  print(pi);
-  bool isTrue = true;
-  print(isTrue);
+void main() {
+  Student student = Student();
+
+  student.speak();
+  student.walk();
+  student.run();
+}
+
+// Person class
+class Person {
+  void speak() {
+    print("Speaking...");
+  }
+}
+
+// Walk mixin/class
+mixin Walk {
+  void walk() {
+    print("Walking...");
+  }
+}
+
+// Running mixin/class
+mixin Running {
+  void run() {
+    print("Running...");
+  }
+}
+
+// Student class inheriting functionality
+class Student extends Person with Walk, Running {
+
+  // overriding speak method
+  @override
+  void speak() {
+    print("Student is speaking...");
+  }
+
+  // overriding walk method
+  @override
+  void walk() {
+    print("Student is walking...");
+  }
+
+  // overriding run method
+  @override
+  void run() {
+    print("Student is running...");
+  }
 }
