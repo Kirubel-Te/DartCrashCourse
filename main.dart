@@ -4,6 +4,9 @@ void main() {
   student.speak();
   student.walk();
   student.run();
+
+  Runes emoji = Runes('\u{1F607}');
+  print(String.fromCharCodes(emoji));
 }
 
 // Person class
