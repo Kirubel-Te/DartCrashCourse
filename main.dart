@@ -7,6 +7,9 @@ void main() {
 
   Runes emoji = Runes('\u{1F607}');
   print(String.fromCharCodes(emoji));
+
+  List? list = List.filled(3, null, growable: false);
+  print(list);
 }
 
 // Person class
