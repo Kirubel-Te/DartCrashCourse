@@ -8,7 +8,7 @@ Files
 - `list.dart`: Examples and utilities for working with Dart `List` collections.
 - `main.dart`: Minimal entry point that ties examples together or runs quick demos.
 - `mixins_and_abstracts.dart`: Examples showing mixins, abstract classes, and inheritance patterns.
-- `promises.dart`: Additional examples focusing on Future-based patterns and chaining (similar to JavaScript Promises).
+
 
 Quick start
 
